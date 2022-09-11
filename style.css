@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body { 
+  display: grid;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  color: #323238;
+}
+
+.page {
+  display: flex;
+  gap: 19.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.temporizador {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sounds {
+  display: grid;
+  gap: 3.2rem;
+  width: 30.8rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.numbers {
+  display: flex;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+}
+
+button {
+  background:none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.buttons {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  gap: 4.0rem;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.floresta2 svg path {
+  fill: #02799D;
+}
+
+.floresta2 svg path + path {
+  fill:#FFFFFF;
+}
+
+.chuva2 svg path {
+  fill: #02799D;
+}
+
+.chuva2 svg path + path {
+  fill:#FFFFFF;
+}
+
+.cafeteria2 svg path {
+  fill: #02799D;
+}
+
+.cafeteria2 svg path + path {
+  fill:#FFFFFF;
+}
+
+.lareira2 svg path {
+  fill: #02799D;
+}
+
+.lareira2 svg path + path {
+  fill:#FFFFFF;
+}
+
+.play2 svg path {
+  fill: #02799D;
+}
+
+footer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 6.0rem;
+}
+
+.backgrounddark {
+  background-color: #121214;
+  color: #FFFFFF;
+}
+
+.colordark svg path {
+  fill: #FFFFFF;
+}
+
+.colordark2 svg path + path {
+  fill: #FFFFFF;
+}
+
+.backdark svg path {
+  fill: #29292E;
+}
+
+input {
+  width: 9.0rem;
+  height: 1.6rem;
+}
+
+.range {
+  appearance: none; /*reseta os estilos iniciais do elemento*/
+  background-color: #323238;
+  height: 0.3rem;
+}
+
+.range::-webkit-slider-thumb { /*para estilizar a bolinha do range - utiliza uma pseudoclass*/
+  appearance: none; /*novamente resetando os estilos*/
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #323238;
+  border-radius: 100%;
+}
+
+.colorinput1  {
+  appearance: none; /*reseta os estilos iniciais do elemento*/
+  background-color: #FFFFFF;
+  height: 0.3rem;
+}
+
+.colorinput2::-webkit-slider-thumb {
+  appearance: none; /*novamente resetando os estilos*/
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+} 
+
+.sounds {
+  position: relative;
+}
+
+#volumeFloresta2 {
+  position: absolute;
+  top: 13.5rem;
+  right: 19.5rem;
+}
+
+#volumeChuva2 {
+  position: absolute;
+  top: 13.5rem;
+  right: 2.5rem;
+}
+
+#volumeCafeteria2 {
+  position: absolute;
+  top: 32.0rem;
+  right: 19.5rem;
+}
+
+#volumeLareira2 {
+  position: absolute;
+  top: 32.0rem;
+  right: 2.5rem;
+}
